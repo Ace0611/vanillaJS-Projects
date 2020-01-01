@@ -1,0 +1,10 @@
+:root{
+    margin: 10vw auto;
+    width: 100px;
+    padding: 5vw;
+    border: 1px solid lightgray;
+}
+
+.container {
+    padding: 5px
+}
