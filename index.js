@@ -40,7 +40,7 @@ let Trie = function(){
     }
 }
 
-let inputEl = document.getElementsByTagName('input');
+let inputEl = document.querySelector('input');
 
 function handleUpdate(e){
     console.log(e);
