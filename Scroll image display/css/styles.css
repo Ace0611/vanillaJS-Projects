@@ -1,0 +1,21 @@
+body{
+    background-color: yellow;
+}
+
+.container{
+    margin: auto;
+    width: min-content;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.slider-in{
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(0%) scale(0.5);
+}
+
+.slider-in.active{
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+}
