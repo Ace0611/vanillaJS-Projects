@@ -14,8 +14,8 @@ window.addEventListener('load', async e => {
 
     if('serviceWorker' in navigator){
         try{
-            navigator.serviceWorker.register('sw.js');
-            console.log('SW registered')
+            navigator.serviceWorker.register('sw.js')
+            console.log('SW Registered')
         } catch(error){
             console.log('SW Registration failed')
         }
@@ -32,8 +32,8 @@ async function updateSources(){
 async function updateNews(source = defaultSource){
     const res = await fetch(`https://newsapi.org/v1/articles?source=${source}&apiKey=${apiKey}`);
     const json = await res.json();
-
-    main.innerHTML = json.articles.map(createArticle).join('\n');
+    console.log(json)
+    main.innerHTML = json && json.articles.map(createArticle).join('\n');
 }
 
 function createArticle(article){
