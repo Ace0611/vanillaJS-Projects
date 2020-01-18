@@ -1,0 +1,27 @@
+$primaryBtn : green;
+$textColor : rgb(0, 0, 0);
+// @mixin flexCenter($direction, $background) {
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: $direction;
+//     background: $background;
+// }
+
+header{
+
+    // @include flexCenter(column, pink);
+    background: lightblue;
+    color: $textColor;
+    height: 100vh;
+    button {
+        background: $primaryBtn;
+        &:hover{
+            background: grey;
+        }
+        &::after{
+            content: "Hello";
+        }
+    }
+}

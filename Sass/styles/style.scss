@@ -1,0 +1,13 @@
+@import './header';
+$primaryBtn : green;
+// $textColor : rgb(0, 0, 0);
+
+.contact button {
+    background: $primaryBtn;
+}
+
+.contact{
+    @extend header;
+    background: lightcoral;
+    // width: 100% - 100px; //calculations
+}
