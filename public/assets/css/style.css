@@ -1,0 +1,81 @@
+* {
+  margin: auto;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.color {
+  margin: 10px;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+}
+
+.lightcoral {
+  background-color: lightcoral;
+}
+
+.lightgreen {
+  background-color: lightgreen;
+}
+
+.lightsalmon {
+  background-color: lightsalmon;
+}
+
+.container {
+  border: 1px solid lightgray;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.chapters {
+  background-color: whitesmoke;
+  width: 50%;
+  padding: 20px;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+
+.lesson {
+  background-color: whitesmoke;
+  width: 50%;
+  padding: 20px;
+  border-radius: 2rem;
+}
+
+.chapters:after {
+  content: "\02795";
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active,
+.chapters:hover {
+  background-color: #ccc;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+.lessons {
+  margin: 10px 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.lessons > * {
+  margin: 10px;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 50%;
+}
